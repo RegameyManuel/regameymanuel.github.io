@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuel Regamey — Projets</title>
+  <meta name="description" content="Portail des projets GitHub Pages de Manuel Regamey (CV, SluDoc, et plus)." />
+  <link rel="stylesheet" href="assets/style/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header aria-label="En-tête">
+      <div class="brand">
+        <!--
+        <div class="logo" aria-hidden="true"></div>
+        -->
+        <div>
+          <h1>Manuel Regamey</h1>
+          <div class="muted">Portail de projets & documents</div>
+        </div>
+      </div>
+      <button class="toggle" id="themeToggle" aria-label="Basculer thème">Thème</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="intro-title">
+        <h2 id="intro-title">Bienvenue</h2>
+        <p>
+          Ce portail regroupe quelques uns de mes projets hébergés sur GitHub Pages (statiques) ainsi que des documents pédagogiques.
+        </p>
+      </section>
+
+      <section aria-labelledby="featured-title">
+        <h2 id="featured-title">Projets en avant</h2>
+        <div class="grid">
+          <!-- Carte CV -->
+          <a class="card" href="CV/" aria-label="Aller au projet CV">
+            <div class="pill">Pages</div>
+            <h3>Mon CV</h3>
+            <p>Version web de mon CV (mise en page simple, imprimable). Idéal pour un partage rapide.</p>
+            <span class="cta">Ouvrir →</span>
+          </a>
+
+          <!-- Carte SluDoc -->
+          <a class="card" href="SluDoc/" aria-label="Aller au projet SluDoc">
+            <div class="pill">Docs</div>
+            <h3>SluDoc</h3>
+            <p>Documentation et pages générées à partir de Markdown. <br />Astuce : <strong>SluInk</strong> pour
+              automatiser la génération.</p>
+            <span class="cta">Ouvrir →</span>
+          </a>
+
+          <!-- Carte Collisions -->
+          <a class="card" href="Collisions/" aria-label="Aller au projet Collisions">
+            <div class="pill">Fun</div>
+            <h3>un peu de mouvement ...</h3>
+            <p> Un peude Js dans une balise canvas ...</p>
+            <span class="cta">Ouvrir</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 
+      <section aria-labelledby="repos-title">
+        <h2 id="repos-title">Tous les dépôts publics (auto)</h2>
+        <p class="muted">Liste générée via l’API GitHub</p>
+        <ul id="repoList" class="list" aria-live="polite">
+          <li class="muted">Chargement…</li>
+        </ul>
+      </section>
+      -->
+    </main>
+
+    <footer>
+      <small>&copy; <span id="year"></span> Manuel Regamey — <a href="https://github.com/RegameyManuel"
+          rel="noopener">GitHub</a></small>
+    </footer>
+  </div>
+
+  <script src="assets/script/script.js"></script>
+</body>
+
+</html>
